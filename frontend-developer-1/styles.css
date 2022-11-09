@@ -135,6 +135,9 @@
     top: 60px;
     padding: 24px;
     background-color: var(--white);
+    left: 0;
+    width: 100%;
+   
 }
 .mobile-menu a{
   text-decoration: none;
@@ -298,6 +301,113 @@
   height: 35px;
 
 }
+
+/* *PRODUCT INFO */
+
+  aside{
+  width: 360px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+  right: 0;
+  position: absolute;
+  background-color: var(--white); 
+} 
+
+/*  .detalle {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 300px;
+  place-items: center;
+  justify-content: space-between;
+}  */
+  
+
+.visual {
+  display: flex;
+  flex-direction: column;
+
+}
+.visual div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigate {
+  height: 12px;
+}
+.navigate div{
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: var(--very-light-pink);
+  margin: 6px;
+}
+.navigate div:hover{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: var(--hospital-green);
+  margin: 6px;
+  cursor: pointer;
+}
+.imageOfProduct  {
+  height: 360px;
+  width: 360px; 
+  object-fit: cover;
+  border-bottom-left-radius:10%; 
+  border-bottom-right-radius:10%; 
+  margin-bottom: 10px;
+} 
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.info span:nth-child(1){
+  font-size: var(--md);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.title{
+  font-size: var(--md);
+  color:var(--very-light-pink);
+  margin-bottom: 24px;
+}
+.info span:nth-child(3) {
+  font-size: var(--sm);
+  
+}
+.add-to-cart{
+  width: 250px;
+  height: 50px;
+  background-color: var(--hospital-green);
+  border-radius: 12px;
+  color: var(--white);
+  border-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--md);
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+.add-to-cart:hover {
+  cursor: pointer;
+ 
+  
+}
+
+.carrito {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin: 0;
+} 
+
 
 
 @media (max-width: 640px) {
